@@ -2,7 +2,7 @@
 stage("Stage 1"){
         echo "From the Jenkinsfile " + env.BRANCH_NAME
         echo "Fail!"
-        sh "exit 0"
+        env.JOB_BASE_NAME.sh "exit 0"
     }
 
 stage("Stage 2"){
