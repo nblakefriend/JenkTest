@@ -1,1 +1,4 @@
-echo "From the Jenkinsfile"
+
+stage("TEST STAGE"){
+        echo "From the Jenkinsfile"
+    }
