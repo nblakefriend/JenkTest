@@ -1,9 +1,9 @@
+#!/usr/bin/groovy
 
 stage("Stage 1"){
         echo "From the Jenkinsfile " + env.BRANCH_NAME
         echo "Fail!"
         echo env.JOB_BASE_NAME
-        gitHub.isPrOlderThan(1)
     }
 
 stage("Stage 2"){
