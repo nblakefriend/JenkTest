@@ -1,9 +1,12 @@
-stage("Stage 1"){
-        echo "From the Jenkinsfile " + env.BRANCH_NAME
-        echo "Fail!"
+stage("ENV JOB NAME"){
         echo env.JOB_BASE_NAME
+        test.envTest()
     }
 
-stage("Stage 2"){
-        echo "Something else from the jenkins file " + env.JOB_NAME
+stage("VARS TEST"){
+        test.test()
     }
+
+stage("CLASS TEST"){
+    echo echoTest()
+}
