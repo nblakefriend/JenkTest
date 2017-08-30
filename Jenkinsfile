@@ -3,10 +3,10 @@ stage("ENV JOB NAME"){
         test.envTest()
     }
 
-stage("VARS TEST"){
+stage("VARS: TEST.TEST"){
         test.test()
     }
 
-stage("CLASS TEST"){
+stage("VAR: Class method"){
     test.echoTest()
 }
