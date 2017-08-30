@@ -8,5 +8,5 @@ stage("VARS TEST"){
     }
 
 stage("CLASS TEST"){
-    echo echoTest()
+    echo test.echoTest()
 }
