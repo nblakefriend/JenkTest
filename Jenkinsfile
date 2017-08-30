@@ -1,5 +1,3 @@
-#!/usr/bin/groovy
-
 stage("Stage 1"){
         echo "From the Jenkinsfile " + env.BRANCH_NAME
         echo "Fail!"
