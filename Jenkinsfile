@@ -15,8 +15,8 @@ SHARDS[2] ="us3"
 def branches = [:]
 //for (int i = 0; i < SHARDS.size(); i++) {
 SHARDS.each {
-    def index = i // fresh variable per iteration; i will be mutated
-    branches["us${i}"] = {
+//    def index = i // fresh variable per iteration; i will be mutated
+    branches["TEST NEW:"] = {
         node() {
             stage("TEST"){
 //                echo SHARDS.get(index)
