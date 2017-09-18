@@ -17,8 +17,8 @@ for (int i = 0; i < SHARDS.size(); i++) {
     def index = i // fresh variable per iteration; i will be mutated
     branches["split${i}"] = {
         node() {
-            stage("Multi test: " + SHARDS.get(index)){
-                echo SHARDS.get(index)
+            stage("Multi test: " + SHARDS[${i}]){
+//                echo SHARDS.get(index)
                 echo "SHARD US${i}"
             }
 //            deleteDir()
