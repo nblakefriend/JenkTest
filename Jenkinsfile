@@ -16,7 +16,7 @@ def branches = [:]
 //for (int i = 0; i < SHARDS.size(); i++) {
 SHARDS.each {
 //    def index = i // fresh variable per iteration; i will be mutated
-    branches["TEST NEW:"] = {
+//    branches["TEST NEW:"] = {
         node() {
             stage("TEST"){
 //                echo SHARDS.get(index)
@@ -29,6 +29,6 @@ SHARDS.each {
 //            sh "${tool 'M3'}/bin/mvn -B -Dmaven.test.failure.ignore test"
 //            junit 'target/surefire-reports/*.xml'
         }
-    }
+//    }
 }
 parallel branches
