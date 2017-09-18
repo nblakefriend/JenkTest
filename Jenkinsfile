@@ -8,7 +8,7 @@ node() {
 }
 def splits = 3
 def branches = [:]
-for (int i = 0; i < splits.size(); i++) {
+for (int i = 0; i < 3; i++) {
     def index = i // fresh variable per iteration; i will be mutated
     branches["split${i}"] = {
         node() {
