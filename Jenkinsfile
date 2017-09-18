@@ -13,7 +13,8 @@ SHARDS[1] = "us2"
 SHARDS[2] ="us3"
 
 def branches = [:]
-for (int i = 0; i < SHARDS.size(); i++) {
+//for (int i = 0; i < SHARDS.size(); i++) {
+splits.times {
     def index = i // fresh variable per iteration; i will be mutated
     branches["split${i}"] = {
         node() {
@@ -30,4 +31,5 @@ for (int i = 0; i < SHARDS.size(); i++) {
         }
     }
 }
+//}
 parallel branches
