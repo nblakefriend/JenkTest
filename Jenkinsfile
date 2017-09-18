@@ -12,7 +12,8 @@ for (int i = 0; i < 3; i++) {
     def index = i // fresh variable per iteration; i will be mutated
     branches["split${i}"] = {
         node() {
-            stage("Multi test"){
+            stage("Multi test  NEW -" + env.i){
+                echo "${i}"
                 echo "SHARD US${i}"
             }
 //            deleteDir()
