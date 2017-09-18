@@ -8,9 +8,9 @@ node() {
 }
 def splits = 3
 def SHARDS = ["us1", "us2", "us3"]
-SHARDS[0] = "us1"
-SHARDS[1] = "us2"
-SHARDS[2] ="us3"
+//SHARDS[0] = "us1"
+//SHARDS[1] = "us2"
+//SHARDS[2] ="us3"
 
 def branches = [:]
 //for (int i = 0; i < SHARDS.size(); i++) {
