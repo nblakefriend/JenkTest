@@ -19,7 +19,7 @@ for (int i = 0; i < SHARDS.size(); i++) {
         node() {
             stage("TEST"){
 //                echo SHARDS.get(index)
-                echo "SHARD SHARDS.get(index)"
+                echo SHARDS.length
             }
 //            deleteDir()
 //            unstash 'SHARD'
