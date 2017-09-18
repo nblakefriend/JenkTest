@@ -18,8 +18,8 @@ for (int i = 0; i < SHARDS.size(); i++) {
     branches["split${i}"] = {
         node() {
             stage("TEST"){
-//                echo SHARDS.get(index)
-                echo "SHARD US${i}"
+                echo SHARDS.get(index)
+                echo "SHARD SHARDS.get(index)"
             }
 //            deleteDir()
 //            unstash 'SHARD'
