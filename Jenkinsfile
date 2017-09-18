@@ -6,7 +6,7 @@ node() {
         echo "From the Jenkinsfile"
     }
 }
-def splits = splitTests count(3)
+def splits = 3
 def branches = [:]
 for (int i = 0; i < splits.size(); i++) {
     def index = i // fresh variable per iteration; i will be mutated
